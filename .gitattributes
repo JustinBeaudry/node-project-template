@@ -1,0 +1,24 @@
+* text=auto
+
+*.js text linguist-language=JavaScript
+*.md text linguist-language=Markdown
+*.json text linguist-language=JSON
+*.yaml text linguist-language=YAML
+*.yml text linguist-language=YAML
+
+LICENSE text
+.editorconfig text linguist-detectable=false
+.gitattributes text linguist-detectable=false
+.gitignore text linguist-detectable=false
+.npmignore text linguist-detectable=false
+.prettierignore text linguist-detectable=false
+.npmrc text linguist-detectable=false
+.nvmrc text linguist-detectable=false
+
+__mocks__/* linguist-detectable=false
+__tests__/* linguist-detectable=false
+
+package-lock.json linguist-generated=true -diff
+.idea/* linguist-generated=true -diff
+docs/* linguist-documentation -diff
+coverage/* linguist-generated=true -diff

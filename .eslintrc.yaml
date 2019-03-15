@@ -1,0 +1,224 @@
+---
+root: true
+env:
+  node: true
+  es6: true
+parserOptions:
+  sourceType: script
+  ecmaFeatures:
+    globalReturn: false
+plugins:
+  - lodash-fp
+  - node
+  - jsdoc
+  - new-with-error
+  - promise
+  - security
+  - array-func
+  - optimize-regex
+  - unicorn
+  - sonarjs
+extends:
+  - plugin:lodash-fp/recommended
+  - plugin:promise/recommended
+  - plugin:array-func/recommended
+rules:
+  # disable style rules as prettier will handle those
+  quotes: off
+  curly: off
+  semi: off
+  comma-dangle: off
+  no-trailing-spaces: off
+  arrow-body-style: off
+  arrow-parens: off
+  arrow-spacing: off
+  camelcase: off
+  no-underscore-dangle: off
+  # global rules
+  no-new: off
+  strict:
+    - error
+    - global
+  no-eval: error
+  no-void: error
+  max-statements-per-line:
+    - error
+    - max: 2
+  max-depth:
+    - error
+    - max: 3
+  no-empty: error
+  no-extra-parens: error
+  no-extra-semi: error
+  no-lone-blocks: error
+  no-script-url: error
+  unicorn/explicit-length-check:
+    - error
+    - non-zero: greater-than
+  unicorn/no-abusive-eslint-disable: error
+  # debug rules
+  no-console: error
+  no-debugger: error
+  # type rules
+  no-implicit-coercion: error
+  valid-typeof: error
+  no-invalid-this: error
+  # native rules
+  no-extend-native: error
+  no-native-reassign: error
+  # prototype rules
+  no-proto: error
+  no-prototype-builtins: error
+  # return rules
+  no-else-return: error
+  no-return-assign: error
+  no-unreachable: error
+  # variable rules
+  no-unused-vars:
+    - error
+    - vars: local
+  no-var: error
+  prefer-const: error
+  block-scoped-var: error
+  no-redeclare: error
+  no-delete-var: error
+  no-mixed-requires: error
+  # string rules
+  no-template-curly-in-string: error
+  no-octal-escape: error
+  sonarjs/no-duplicate-string: error
+  # boolean rules
+  no-extra-boolean-cast: error
+  # number rules
+  no-compare-neg-zero: error
+  use-isnan: error
+  no-octal: error
+  # object rules
+  getter-return: error
+  no-dupe-keys: error
+  no-new-object: error
+  prefer-object-spread: error
+  # array rules
+  no-array-constructor: error
+  no-useless-concat: error
+  unicorn/no-array-instanceof: error
+  # function rules
+  consistent-return: error
+  max-nested-callbacks:
+    - error
+    - max: 3
+  max-params:
+    - error
+    - max: 3
+  no-dupe-args: error
+  no-extra-bind: error
+  no-empty-function: error
+  no-new-func: error
+  no-useless-call: error
+  no-param-reassign: warn
+  handle-callback-err: error
+  prefer-arrow-callback: error
+  prefer-rest-params: error
+  sonarjs/no-extra-arguments: error
+  sonarjs/no-use-of-empty-return-value: error
+  sonarjs/prefer-single-boolean-return: error
+  # class rules
+  constructor-super: error
+  no-useless-constructor: error
+  no-dupe-class-members: error
+  no-class-assign: error
+  no-this-before-super: error
+  # regexp rules
+  no-empty-character-class: error
+  no-invalid-regexp: error
+  require-unicode-regexp: off
+  optimize-regex/optimize-regex: warn
+  # loop rules
+  no-iterator: error
+  no-loop-func: error
+  # error rules
+  no-throw-literal: error
+  unicorn/catch-error-name: error
+  unicorn/custom-error-definition: error
+  sonarjs/no-useless-catch: error
+  # comparison rules
+  no-self-compare: error
+  # assignment rules
+  no-self-assign: error
+  no-sequences: error
+  no-undef-init: error
+  no-global-assign: error
+  no-const-assign: error
+  no-shadow: error
+  no-shadow-restricted-names: error
+  # promise rules
+  prefer-promise-reject-errors: error
+  promise/catch-or-return: error
+  promise/no-return-wrap: error
+  promise/no-nesting: error
+  promise/no-promise-in-callback: error
+  promise/no-callback-in-promise: warn
+  promise/no-new-statics: error
+  promise/valid-params: error
+  # logic rules
+  multiline-ternary: error
+  no-nested-ternary: error
+  no-unneeded-ternary: error
+  no-fallthrough: error
+  sonarjs/no-all-duplicated-branches: error
+  sonarjs/no-identical-conditions: error
+  sonarjs/no-inverted-boolean-check: error
+  sonarjs/no-small-switch: error
+  # symbol rules
+  no-new-symbol: error
+  # node rules
+  no-process-exit: error
+  node/prefer-global/console:
+    - error
+    - always
+  node/prefer-global/process:
+    - error
+    - always
+  node/prefer-global/buffer:
+    - error
+    - never
+  node/prefer-global/url:
+    - error
+    - never
+  node/prefer-global/url-search-params:
+    - error
+    - never
+  node/prefer-global/text-decoder:
+    - error
+    - never
+  node/prefer-global/text-encoder:
+    - error
+    - never
+  node/no-extraneous-require: error
+  node/no-missing-require: error
+  node/no-unsupported-features/es-builtins: error
+  node/no-unsupported-features/es-syntax: error
+  node/no-unsupported-features/node-builtins: error
+  node/no-deprecated-api: error
+  node/no-unpublished-require: error
+  node/shebang: error
+  # jsdoc rules
+  jsdoc/check-examples: error
+  jsdoc/check-param-names: error
+  jsdoc/check-tag-names: error
+  jsdoc/check-types: error
+  jsdoc/newline-after-description: error
+  jsdoc/require-description-complete-sentence: error
+  jsdoc/require-hyphen-before-param-description: error
+  jsdoc/require-param-name: error
+  jsdoc/require-param-type: error
+  jsdoc/require-param: error
+  jsdoc/require-returns-type: error
+  jsdoc/require-returns: error
+  jsdoc/valid-types: error
+  jsdoc/no-undefined-types: error
+  # node security rules
+  security/detect-unsafe-regex: error
+  security/detect-buffer-noassert: error
+  security/detect-no-csrf-before-method-override: error
+...

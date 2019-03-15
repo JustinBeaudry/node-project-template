@@ -1,0 +1,7 @@
+---
+concurrent: true
+linters:
+  lib/**/*.js:
+    - make
+    - git add
+...

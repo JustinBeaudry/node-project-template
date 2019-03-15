@@ -1,0 +1,14 @@
+{
+  "moduleFileExtensions": ["js"],
+  "notify": true,
+  "notifyMode": "failure-change",
+  "testMatch": ["**/__tests__/**/*.spec.js"],
+  "roots": ["lib"],
+  "verbose": true,
+  "coverageDirectory": "coverage",
+  "collectCoverageFrom": ["**/lib/**/*.js"],
+  "coverageReporters": ["json", "lcov"],
+  "errorOnDeprecated": true,
+  "maxConcurrency": 10,
+  "prettier": "node_modules/.bin/prettier"
+}

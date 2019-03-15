@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    "plugins/markdown",
+    "jsdoc-plugin-npm",
+    "jsdoc-plugin-url"
+  ],
+  "source": {
+    "include": [
+      "lib/**/*.js"
+    ],
+    "exclude": []
+  },
+  "templates": {
+    "referenceTitle": "name"
+  },
+  "opts": {
+    "template": "node_modules/braintree-jsdoc-template",
+    "destination": "docs",
+    "readme": "README.md"
+  }
+}

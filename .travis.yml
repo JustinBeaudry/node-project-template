@@ -1,0 +1,7 @@
+language: node_js
+before_script: echo "Running tests against $(node -v)..."
+script: make
+after_script: make coverage && cat ./coverage/lcov.info | npx coveralls
+notifications:
+  email:
+    - travis-ci@justinbeaudry.dev
