@@ -32,6 +32,9 @@
       <option name="OBJECT_WRAPPING" value="5" />
       <option name="ARRAY_WRAPPING" value="5" />
     </JSON>
+    <MarkdownNavigatorCodeStyleSettings>
+      <option name="RIGHT_MARGIN" value="72" />
+    </MarkdownNavigatorCodeStyleSettings>
     <ScssCodeStyleSettings>
       <option name="HEX_COLOR_LOWER_CASE" value="true" />
       <option name="HEX_COLOR_LONG_FORMAT" value="true" />
