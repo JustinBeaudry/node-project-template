@@ -1,6 +1,6 @@
 ---
-name: "\u0001F635 Bug Report"
-about: "Something isn't working as expected \u0001F62C."
+name: "\U0001F635 Bug Report"
+about: "Something isn't working as expected \U0001F62C."
 title: ''
 labels: 'i: bug'
 assignees: ''

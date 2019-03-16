@@ -1,6 +1,6 @@
 ---
-name: "\u0001F914 Feature Request"
-about: "I have a suggestion (and may want to implement it \u0001F60E)!"
+name: "\U0001F914 Feature Request"
+about: "I have a suggestion (and may want to implement it \U0001F60E)!"
 title: ''
 labels: 'i: enhancement'
 assignees: ''
